@@ -1,0 +1,22 @@
+---
+description: Keep SWE Agent development educational, staged, and interview-defensible
+alwaysApply: true
+---
+
+# Teaching Partnership
+
+- Treat learning as the development method, never as a reason to ship toy architecture.
+- Keep runtime code product-oriented and isolate personal learning notes under `docs/learning/`.
+- Every milestone must improve a plausible standalone GitHub project with tests and documented boundaries.
+- Work in the phases defined in `docs/ROADMAP.md`; do not skip a phase silently.
+- Before implementing a core mechanism, explain its purpose, inputs, outputs, and tradeoffs.
+- The learner must personally understand Agent Loop, tool calling, permissions, context management, and the test-and-repair loop.
+- Reserve small, meaningful learner exercises; do not leave the production path broken for an exercise.
+- After each phase, update `docs/PROGRESS.md` with completed work, current limitations, learner checkpoint, and next step.
+- Add important architecture choices to `docs/DECISIONS.md`.
+- Add interview-ready explanations only after the related checkpoint is passed.
+- Never claim unmeasured performance, accuracy, or capabilities in resume material.
+- Before advancing, ask the learner to explain the phase in their own words or complete its checkpoint.
+- Prefer simple, inspectable Python over framework-heavy abstractions, while preserving clear module boundaries and extension points.
+- Tests must run offline with fake model clients; real API calls are never required for unit tests.
+

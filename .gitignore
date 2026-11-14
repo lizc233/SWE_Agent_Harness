@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+swe-agent.toml
+!swe-agent.toml.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.swe-agent/
+

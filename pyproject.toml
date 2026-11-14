@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swe-agent-harness"
+version = "0.1.0"
+description = "An auditable and extensible harness for software engineering agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "lizc233" }]
+dependencies = [
+    "httpx>=0.27.0,<1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lizc233/SWE_Agent_Harness"
+Repository = "https://github.com/lizc233/SWE_Agent_Harness.git"
+Issues = "https://github.com/lizc233/SWE_Agent_Harness/issues"
+
+[project.scripts]
+swe-agent = "swe_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

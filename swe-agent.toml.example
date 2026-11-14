@@ -1,0 +1,14 @@
+[model]
+base_url = "https://api.deepseek.com"
+name = "deepseek-chat"
+
+[agent]
+max_steps = 12
+max_tool_calls = 48
+max_wall_seconds = 900
+max_context_chars = 200000
+trace_enabled = true
+
+[permissions]
+mode = "ask"
+

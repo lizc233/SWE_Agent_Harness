@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose a measurable capability
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete workflow or evaluation failure does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe behavior, permissions, failure semantics, and tests.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this improves the project?
+    validations:
+      required: true
+

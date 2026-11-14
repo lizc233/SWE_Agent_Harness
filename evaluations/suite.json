@@ -1,0 +1,15 @@
+{
+  "suite": "offline-repair-v1",
+  "description": "Deterministic harness-level repair scenarios; does not measure model intelligence.",
+  "version": 1,
+  "cases": [
+    {
+      "id": "zero-total-percentage",
+      "repository": "examples/demo_repo",
+      "task": "Fix percentage when total is zero, run tests, and inspect the diff.",
+      "expected_tools": ["list_files", "read_file", "edit_file", "run_command", "git_diff"],
+      "assertions": ["tests_pass", "diff_contains_guard"]
+    }
+  ]
+}
+
